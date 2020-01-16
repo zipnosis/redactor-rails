@@ -1,6 +1,6 @@
+# Deprecated
 
-# This repo is deprecated
-## Please check out official gem for Redactor 2. https://github.com/Redactor2/redactor2_rails
+This is a fork of SammyLin's (deprecated) redactor-rails gem, aiming for minimal support of Rails 5. We weren't interested in upgrading to the paid product Redactor 2 and wish to keep our current implementation working, while upgrading to Rails 5.
 
 # Rails 3.2 Integration for Redactor (Devise Edition)
 
@@ -196,7 +196,7 @@ You may use a different model by:
       ...
 
       def redactor_authenticate_user!
-        authenticate_admin_user! # devise before_filter
+        authenticate_admin_user! # devise before_action
       end
 
       def redactor_current_user
